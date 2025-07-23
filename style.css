@@ -1,0 +1,111 @@
+body{
+    background-color: black;
+}
+:root{
+    --flame-color:blueviolet ;
+    --flameshadow-color:rgb(185, 2, 185);
+}
+
+img{
+    width: 200px;
+    margin-left: 45%;
+    margin-top: 30px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 20px azure;
+
+}
+h1{
+    color: azure;
+    text-align: center;
+}
+h2{
+    color: azure;
+    text-align: center;
+}
+.candle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wax{
+    width: 50px;
+    height: 100px;
+    margin-left: -10px;
+    background-color: #fff8dc;
+    border-radius: 5px;
+    border-top: 4px solid #e6c399;
+
+}
+.flame{
+    width: 20px;
+    height: 20px;
+    background-color: var(--flame-color, blueviolet);
+    border-radius: 0 50% 50% 50%;
+    rotate: 45deg;
+    margin-top: 40px;
+    margin-left: -10px;
+    animation: flicker 0.2s infinite alternate;
+    box-shadow: 0 0 10px var(--flame-color, blueviolet);
+
+}
+.candle2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wax2{
+    width: 50px;
+    height: 75px;
+    margin-left: 150px;
+    background-color: #fff8dc;
+    border-radius: 5px;
+    border-top: 4px solid #e6c399; 
+
+}
+.flame2{
+    width: 20px;
+    height: 20px;
+    background-color: var(--flame-color);
+    border-radius: 0 50% 50% 50%;
+    rotate: 45deg;
+    margin-top: -90px;
+    margin-left: 150px;
+    animation: flicker 0.2s infinite alternate;
+    box-shadow: 0 0 10px var(--flameshadow-color);
+}
+.candle3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wax3{
+    width: 50px;
+    height: 75px;
+    margin-left: -150px;
+    background-color: #fff8dc;
+    border-radius: 5px;
+    border-top: 4px solid #e6c399;
+}
+.flame3{
+    width: 20px;
+    height: 20px;
+    background-color: var(--flame-color);
+    border-radius: 0 50% 50% 50%;
+    rotate: 45deg;
+    margin-top: -90px;
+    margin-left: -150px;
+    animation: flicker 0.2s infinite alternate;
+    box-shadow: 0 0 10px var(--flameshadow-color);
+}
+
+@keyframes flicker{
+    from{
+        transform: translateY(0px) scale(1);
+    }
+    to{
+        transform: translateY(-2px) scale(1.1);
+    }
+}
